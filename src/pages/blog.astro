@@ -6,23 +6,19 @@ function normalizeImagePath(src) {
 	return `/${cleaned}`;
 }
 
-const posts = Object.entries(import.meta.glob('./posts/*.md', { eager: true }))
-	.map(([path, post]) => {
-		const rawContent = typeof post.rawContent === 'function' ? post.rawContent() : '';
-		const firstImageMatch =
-			rawContent.match(/!\[[^\]]*\]\(([^)]+)\)/) ||
-			rawContent.match(/<img[^>]+src=["']([^"']+)["']/i);
-		const imageSrc = firstImageMatch?.[1] || post.frontmatter.heroImage || null;
+const posts = Object.entries(import.meta.glob("./posts/*.md", { eager: true }))
+    .map(([path, post]) => ({
+        ...post.frontmatter,
+        href: path.replace("./posts/", "/posts/").replace(/\.md$/, "/"),
+        pubDate: post.frontmatter.pubDate
+            ? new Date(post.frontmatter.pubDate)
+            : null,
+        imageSrc: normalizeImagePath(post.frontmatter.heroImage),
+    }))
+    .filter((post) => post.pubDate)
+    .sort((a, b) => b.pubDate - a.pubDate);
 
-		return {
-			...post.frontmatter,
-			href: path.replace('./posts/', '/posts/').replace(/\.md$/, '/'),
-			pubDate: post.frontmatter.pubDate ? new Date(post.frontmatter.pubDate) : null,
-			imageSrc: imageSrc ? normalizeImagePath(imageSrc) : null,
-		};
-	})
-	.filter((post) => post.pubDate)
-	.sort((a, b) => b.pubDate.getTime() - a.pubDate.getTime());
+
 
 const [featuredPost, ...restPosts] = posts;
 ---
@@ -70,6 +66,10 @@ const [featuredPost, ...restPosts] = posts;
 		)}
 	</body>
 	<style>
+		a {
+			color: #c56981;
+			text-decoration: none;
+		}
 		body {
 			background-color: #282328;
 			color: #BAB9B1;
