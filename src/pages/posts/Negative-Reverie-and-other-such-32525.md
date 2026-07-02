@@ -1,0 +1,7 @@
+---
+title: "Negative Reverie and other such 3/25/25"
+description: "Original Patreon post: /TwirlinCurtis/posts/negative-reverie-125169965"
+pubDate: 2025-03-25
+---
+
+<p><strong>NEGATIVE REVERIE</strong></p><p>Did I put that first picture on last week's post? I forget when I drew it, lmao.</p><p>Anyway, I wrote the synopsis for the second act of the game and its like.... 90% there. There's maybe a few more points I'd like to touch on in it, but its close enough that I think I can start writing the actual dialogue for it now!</p><p><strong>STREAMING!!!</strong></p><p>I'm back. I started streaming again. I get very excited about playing retro games on the real hardware, so I'm pretty stoked about playing The Legend of Dragoon on a physical disc on a real Japanese PS1. MAYBE I'll start doing some speedruns again soon too... when does the FF Relay start? Maybe I'll try to get into that.... Anyway, you can check that out on <a href="http://twitch.tv/twirlincurtis" target="_blank">twitch.tv/twirlincurtis</a> if you're so inclined.</p><p><strong>PODCAST??</strong></p><p>We've been talking about reviving the Every F'n FF podcast... but, WILL we???</p><p>Well, I did the homework for the next two episodes already... so... keep an eye out! Perhaps its time to finally finish up the FFX-2 season.</p><p><strong>MUSIC</strong></p><p>I think I'll be finishing guitar recording for the ZAKU album in.... TWO DAYS. I'm giving myself TWO DAYS to get it done. It's shred time.</p><p></p>
